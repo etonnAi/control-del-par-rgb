@@ -30,8 +30,12 @@ basic.forever(function () {
         vert()
     } else if (intensite < 200 && intensite >= 111) {
         rouge()
-    } else {
+    } else if (intensite < 300 && intensite >= 201) {
         mauve()
+    } else if (intensite < 400 && intensite <= 301) {
+        Bleu()
+    } else {
+        blanc()
     }
     basic.showNumber(pins.analogReadPin(AnalogPin.P0))
 })
